@@ -1,0 +1,21 @@
+[user]
+	name = Giorgio Gallo
+	email = giorgio.gallo@bitnic.it
+[log]
+	abbrevCommit = true
+[alias]
+	last = log -1 HEAD --pretty=format:'%C(auto)%h%Creset %C(blue)%ad%Creset %C(green)%aN%Creset%C(auto)%d%Creset %C(auto)%s%Creset' --date=short
+	lg   = log -40 --graph --pretty=format:'%C(auto)%h%Creset %C(blue)%ad%Creset %C(green)%aN%Creset%C(auto)%d%Creset %C(auto)%s%Creset' --date=short
+	log  = log -40
+	st   = status --short --branch --untracked-files=all
+[color "status"]
+	# colors: normal, black, red, green, yellow, blue, magenta, cyan, white
+	# styles: bold, dim, ul, blink, reverse
+	header = blue
+	added = green
+	changed = red
+	deleted = red reverse
+	untracked = black bold
+	# branch = blue
+[pull]
+	ff = only
