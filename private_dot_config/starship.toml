@@ -29,6 +29,8 @@ symbol = " "
 [directory]
 format = "[$path]($style)[$read_only]($read_only_style) "
 read_only = " "
+truncation_length = 5
+truncation_symbol = "…/"
 
 [docker]
 symbol = " "
